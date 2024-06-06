@@ -16,5 +16,11 @@ namespace Presentacion
         {
             InitializeComponent();
         }
+
+        //botón para salir del formulario
+        private void btSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

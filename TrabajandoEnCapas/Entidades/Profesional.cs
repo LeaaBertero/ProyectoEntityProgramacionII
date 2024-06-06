@@ -14,7 +14,7 @@ namespace Entidades
         #endregion
 
         #region Constructor
-        public Profesionales()
+        public Profesional()
         {
             codProf = 0;
             //string nombre = ""; 
