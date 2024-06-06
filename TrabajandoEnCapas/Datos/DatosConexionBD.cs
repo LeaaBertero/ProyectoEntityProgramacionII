@@ -10,10 +10,39 @@ namespace Datos
 {
     public class DatosConexionBD
     {
-
-        public OleDbConnection Connection; 
+        public OleDbConnection Connection;
 
         public string cadenaConexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data
         Source=F:\EjemploBD.accdb;Persist Security Info=True";
+
+        public DatosConexionBD()
+        {
+            Connection = new OleDbConnection(cadenaConexion);
+        }
+
+        public void AbrirConexion() 
+        {
+            try
+            {
+                if (Connection.State == ConnectionState.Broken || Connection.State == ConnectionState.Closed) Connection.Open();
+            }
+            catch (Exception e)
+            {
+
+                throw new Exception("Error al tratar de cerrar la conexion", e);
+            }
+        }
+        public void CerrarConexion() 
+        {
+            try
+            {
+                if (Connection.State == ConnectionState.Open) Connection.Close();
+            }
+            catch (Exception e)
+            {
+
+                throw new Exception("Error al tratar de cerrar la conexion", e);
+            }
+        }
     }
 }
