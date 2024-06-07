@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.OleDb;
 using Entidades;
+using TrabajandoEnCapas.Datos;
 
 namespace Datos
 {
+    //Hrencia de clases 
     public class DatosProfesionales : DatosConexionBD
     {
         public int abmProfesionales(string accion, Profesional objProfesional)
