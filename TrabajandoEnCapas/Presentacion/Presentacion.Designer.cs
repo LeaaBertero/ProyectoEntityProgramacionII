@@ -36,6 +36,7 @@
             btnGrabar = new Button();
             btnModificar = new Button();
             lblInformativo = new Label();
+            btSalir = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -43,9 +44,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Constantia", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(40, 30);
+            label1.Location = new Point(46, 40);
             label1.Name = "label1";
-            label1.Size = new Size(88, 26);
+            label1.Size = new Size(113, 33);
             label1.TabIndex = 0;
             label1.Text = "Codigo:";
             // 
@@ -53,40 +54,45 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Constantia", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(28, 102);
+            label2.Location = new Point(32, 136);
             label2.Name = "label2";
-            label2.Size = new Size(100, 26);
+            label2.Size = new Size(127, 33);
             label2.TabIndex = 1;
             label2.Text = "Nombre:";
             // 
             // txtCodigo
             // 
-            txtCodigo.Location = new Point(134, 33);
+            txtCodigo.Location = new Point(181, 46);
+            txtCodigo.Margin = new Padding(3, 4, 3, 4);
             txtCodigo.Name = "txtCodigo";
-            txtCodigo.Size = new Size(125, 23);
+            txtCodigo.Size = new Size(142, 27);
             txtCodigo.TabIndex = 2;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(134, 102);
+            txtNombre.Location = new Point(181, 136);
+            txtNombre.Margin = new Padding(3, 4, 3, 4);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(125, 23);
+            txtNombre.Size = new Size(142, 27);
             txtNombre.TabIndex = 3;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(381, 33);
+            dataGridView1.Location = new Point(435, 44);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(382, 289);
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(437, 385);
             dataGridView1.TabIndex = 4;
             // 
             // btnGrabar
             // 
             btnGrabar.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnGrabar.Location = new Point(53, 179);
+            btnGrabar.Location = new Point(46, 239);
+            btnGrabar.Margin = new Padding(3, 4, 3, 4);
             btnGrabar.Name = "btnGrabar";
-            btnGrabar.Size = new Size(88, 30);
+            btnGrabar.Size = new Size(101, 40);
             btnGrabar.TabIndex = 5;
             btnGrabar.Text = "Grabar";
             btnGrabar.UseVisualStyleBackColor = true;
@@ -94,9 +100,10 @@
             // btnModificar
             // 
             btnModificar.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnModificar.Location = new Point(171, 179);
+            btnModificar.Location = new Point(222, 239);
+            btnModificar.Margin = new Padding(3, 4, 3, 4);
             btnModificar.Name = "btnModificar";
-            btnModificar.Size = new Size(88, 30);
+            btnModificar.Size = new Size(118, 40);
             btnModificar.TabIndex = 6;
             btnModificar.Text = "Modificar";
             btnModificar.UseVisualStyleBackColor = true;
@@ -105,17 +112,31 @@
             // 
             lblInformativo.AutoSize = true;
             lblInformativo.Font = new Font("Constantia", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblInformativo.Location = new Point(40, 296);
+            lblInformativo.Location = new Point(46, 395);
             lblInformativo.Name = "lblInformativo";
-            lblInformativo.Size = new Size(146, 19);
+            lblInformativo.Size = new Size(183, 24);
             lblInformativo.TabIndex = 7;
             lblInformativo.Text = "Label informativo";
             // 
+            // btSalir
+            // 
+            btSalir.Cursor = Cursors.Hand;
+            btSalir.Font = new Font("Constantia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btSalir.Location = new Point(771, 489);
+            btSalir.Margin = new Padding(3, 4, 3, 4);
+            btSalir.Name = "btSalir";
+            btSalir.Size = new Size(101, 40);
+            btSalir.TabIndex = 8;
+            btSalir.Text = "Salir";
+            btSalir.UseVisualStyleBackColor = true;
+            btSalir.Click += btSalir_Click;
+            // 
             // Presentacion
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 393);
+            ClientSize = new Size(934, 569);
+            Controls.Add(btSalir);
             Controls.Add(lblInformativo);
             Controls.Add(btnModificar);
             Controls.Add(btnGrabar);
@@ -124,6 +145,7 @@
             Controls.Add(txtCodigo);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Presentacion";
             Text = "Presentacion";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -141,5 +163,6 @@
         private Button btnGrabar;
         private Button btnModificar;
         private Label lblInformativo;
+        private Button btSalir;
     }
 }

@@ -28,6 +28,11 @@ namespace Presentacion
         public Profesional objEntProf = new Profesional();
 
         public NegProfesionales objNegProf = new NegProfesionales();
+
+        private void btSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
 
