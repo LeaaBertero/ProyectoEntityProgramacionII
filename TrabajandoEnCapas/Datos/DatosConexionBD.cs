@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.OleDb;
 
+//creo que esta bien, si no lo vuelvo a como estaba --Datos
 namespace TrabajandoEnCapas.Datos
 {
     public class DatosConexionBD
