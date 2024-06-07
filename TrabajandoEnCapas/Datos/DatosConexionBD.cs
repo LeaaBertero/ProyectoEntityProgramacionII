@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.OleDb;
 
-namespace Datos
+namespace TrabajandoEnCapas.Datos
 {
     public class DatosConexionBD
     {
@@ -43,6 +43,7 @@ namespace Datos
             {
 
                 throw new Exception("Error al tratar de cerrar la conexion", e);
+                
             }
         }
     }
