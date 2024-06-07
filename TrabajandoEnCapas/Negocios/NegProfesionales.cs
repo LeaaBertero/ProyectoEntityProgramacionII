@@ -14,6 +14,7 @@ namespace Negocios
 
         DatosProfesionales objDatosProfes = new DatosProfesionales();
         
+        //ver acá este eror que se prudujo,(continuar con el final de la pagina 6 del documento Pdf)
         public int abmProfesionales(string accion, Profesional objProfesional); //continuar(ver acá este error que se produjo.)
 
 
