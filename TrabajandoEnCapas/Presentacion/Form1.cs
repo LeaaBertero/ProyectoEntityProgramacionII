@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class Presentacion : Form
+    public partial class Form1 : Form
     {
-        public Presentacion()
+        public Form1()
         {
             InitializeComponent();
-        }
-
-        //botón para salir del formulario
-        private void btSalir_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }
