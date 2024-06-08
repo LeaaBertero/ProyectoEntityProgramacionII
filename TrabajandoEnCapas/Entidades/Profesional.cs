@@ -8,6 +8,9 @@ namespace Entidades
 {
     public class Profesional
     {
+        //instancia de la clase "Profesional"
+        public Profesional objEntProf = new Profesional();
+
         #region atributos
         private int codProf;
         private string nombre;

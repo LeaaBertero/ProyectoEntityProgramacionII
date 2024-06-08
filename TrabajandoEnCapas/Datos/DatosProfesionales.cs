@@ -11,7 +11,7 @@ using TrabajandoEnCapas.Datos;
 namespace Datos
 {
     //Hrencia de clases 
-    public class DatosProfesionales : DatosConexionBD
+    public class DatosProfesionales : DatosConexionBD //herencia DatosConexionBD
     {
         public int abmProfesionales(string accion, Profesional objProfesional)
         {
@@ -22,7 +22,7 @@ namespace Datos
 
             if (accion == "Modificar") orden = "update Profesionales set Nombre='" + objProfesional.Nombre + "' where CodProf = " + objProfesional.CodProf + "; ";
 
-            OleDbCommand cmd = new OleDbCommand(orden, Connection);
+            OleDbCommand cmd = new OleDbCommand(orden, Conexion);
 
             try
             {
@@ -50,7 +50,7 @@ namespace Datos
 
             else orden = "Select * from Profesionales;";
 
-            OleDbCommand cmd = new OleDbCommand(orden, Connection);
+            OleDbCommand cmd = new OleDbCommand(orden, Conexion);
             DataSet ds = new DataSet();
             OleDbDataAdapter da = new OleDbDataAdapter();
             try
