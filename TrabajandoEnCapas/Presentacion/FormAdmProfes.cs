@@ -32,6 +32,10 @@ namespace Presentacion
 
         }
 
+        public Profesional objEntProf = new Profesional();
+
+        public NegProfesionales objNegProf = new NegProfesionales();
+
         //Método privado, que no devuelve nada(Void)
         private void LlenarDgv()
         {
@@ -129,7 +133,7 @@ namespace Presentacion
             if (nResultado != -1) 
             {
                 //Mensaje??
-                lbInforacion.Text = "Aviso, El profesional fue modificado con éxito";
+                lbInforacion.Text = "Aviso, El profesional fue modificado con éxito";             
                 Limpiar();
                 LlenarDgv();
 
