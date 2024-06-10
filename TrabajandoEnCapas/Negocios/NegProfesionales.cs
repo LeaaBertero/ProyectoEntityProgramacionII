@@ -7,6 +7,8 @@ using System.Data; //using agregados
 using Datos;
 using Entidades;
 
+
+
 namespace Negocios
 {
     public class NegProfesionales
