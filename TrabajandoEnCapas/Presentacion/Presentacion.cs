@@ -1,8 +1,8 @@
 namespace Presentacion
 {
-    public partial class Form1 : Form
+    public partial class Presentacion : Form
     {
-        public Form1()
+        public Presentacion()
         {
             InitializeComponent();
         }
