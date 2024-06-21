@@ -13,9 +13,8 @@ namespace Entidades
         private string nombre;
         #endregion
 
-
-        #region constructor
-        public Profesionales() 
+        #region Constructor
+        public Profesional()
         {
             codProf = 0;
             nombre = string.Empty;
@@ -28,6 +27,7 @@ namespace Entidades
             get { return codProf; }
             set { codProf = value; }
         }
+
         public string Nombre
         {
             get { return nombre; }
